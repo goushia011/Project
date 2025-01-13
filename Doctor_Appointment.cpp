@@ -10,7 +10,7 @@ int bookAppointment()
     system("cls");
 	
     cout<<"\n ----- Book Your Appointment ---- \n";	
-    cout<<"\n ----- Availbale slots ---- \n";	 
+    cout<<"\n ----- Availbale slots are :----- \n";	 
 
     //check if record already exist..
     ifstream read;
@@ -44,7 +44,7 @@ int bookAppointment()
 	if(arr[i] == 0) 
 	cout<<"\n "<<key<<"-> 0"<<hours<<" - Available";
 	else
-	cout<<"\n "<<key<<"-> 0"<<hours<<" - Booked";
+	cout<<"\n "<<key<<"-> 0"<<hours<<" - This slot is Booked";
 	}
 	
 	else
@@ -52,7 +52,7 @@ int bookAppointment()
 	if(arr[i] == 0) 
 	cout<<"\n "<<key<<"->"<<hours<<" - Available";
 	else
-	cout<<"\n "<<key<<"->"<<hours<<" - Booked";
+	cout<<"\n "<<key<<"->"<<hours<<" - This slot is Booked";
 	}
 	hours++; key++;
 	}
